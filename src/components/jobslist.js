@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Job from "./job";
 import { FormattedMessage } from "react-intl";
 
-const JobsList = () => {
+const JobsList = (props) => {
+  
   const [offers] = useState([
     {
       id: "0001",
@@ -36,7 +37,7 @@ const JobsList = () => {
   return (
     <div>
       <table className="table" >
-        <thead className={<FormattedMessage id="Color"/>} >
+        <thead className={props.theadClassName} >
           <tr>
             <th scope="col">#</th>
             <th scope="col">

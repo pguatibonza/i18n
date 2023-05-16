@@ -11,7 +11,7 @@ console.log(browserLanguage);
 ReactDOM.render(
     
     <IntlProvider locale={browserLanguage} messages={messages}>
-            <JobsList/>
+            <JobsList theadClassName={messages["Color"]}/>
             
     </IntlProvider>, document.getElementById("root")
 );
